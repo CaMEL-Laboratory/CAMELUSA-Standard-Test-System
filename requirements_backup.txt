@@ -17,7 +17,7 @@ python-dateutil==2.9.0.post0
 pytz==2026.2
 PyYAML==6.0.1
 requests==2.27.1
-scipy==1.5.4
+scipy==1.18.1
 six==1.17.0
 torch==1.10.0
 torchvision==0.11.0a0+3752807
