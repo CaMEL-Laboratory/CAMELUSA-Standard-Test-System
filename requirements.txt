@@ -15,7 +15,7 @@ opencv_python==4.5.5.64
 openvino==2026.4.1
 pafy==0.5.5
 paho_mqtt==2.2.0
-pandas==1.1.5
+pandas==3.1.1
 Pillow==13.0.0
 protobuf==7.36.2
 psutil==7.2.2
