@@ -6,21 +6,13 @@ on:
 
 jobs:
   deploy-to-tx2:
-    runs-on: self-hosted  # 直接指定在你的 Jetson TX2 自托管运行器上执行
+    runs-on: self-hosted
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Verify Environment and Workspace
+      - name: Environment and Workspace Check
         run: |
           echo "=== 正在 TX2 本地执行构建与部署 ==="
           pwd
           python3 --version
-          docker --version || echo "Docker 未安装或需sudo权限"
-
-      - name: Build Docker Image (Optional)
-        run: |
-          # 如果你写好了 Dockerfile，可以在这里构建
-          # docker build -t yolov5-tx2:latest .
-          echo "代码已成功同步至 TX2 本地工作目录！"
+          echo "当前工作目录文件列表："
+          ls -la
