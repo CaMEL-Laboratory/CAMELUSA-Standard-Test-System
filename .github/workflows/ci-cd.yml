@@ -1,0 +1,21 @@
+name: YOLOv5 Jetson TX2 CI/CD
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  ci-cd-pipeline:
+    runs-on: self-hosted
+
+    steps:
+      - name: TX2 Environment and Workspace Check
+        run: |
+          echo "=== 成功触发 Jetson TX2 CI/CD 自动化流水线 ==="
+          pwd
+          python3 --version
+          echo "当前工作目录文件列表："
+          ls -la
+          
+          # 提示：你可以在这里直接编写后续的自动化任务或推理脚本
+          # python3 detect.py --weights yolov5s.pt --source 0
