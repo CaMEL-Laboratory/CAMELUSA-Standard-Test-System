@@ -1,0 +1,23 @@
+# 基于您当前已经跑通的镜像
+FROM jetson-yolo-app:v1
+
+# 设定工作目录
+WORKDIR /app
+
+# 将宿主机的项目代码、配置、人脸模型全部拷入镜像
+COPY . /app
+
+# 将宿主机的 Python 虚拟环境与华睿相机 SDK 拷入镜像（需先确保它们在构建上下文中，或先临时复制到当前目录再构建）
+# 注意：Docker COPY 只能读取当前目录及子目录下的文件
+COPY ./yolo5_env /opt/yolo5_env
+COPY ./GeneralMVTech /opt/GeneralMVTech
+
+# 固化环境变量
+ENV CONFIG_PATH=/app/configs/hardware_channels.yaml \
+    SHAPE_PREDICTOR_PATH=/app/shape_predictor_68_face_landmarks.dat \
+    OPENBLAS_CORETYPE=ARMV8 \
+    PYTHONIOENCODING=utf-8 \
+    PYTHONPATH=/app \
+    QT_X11_NO_MITSHM=1
+
+CMD ["/opt/yolo5_env/bin/python", "/app/src/Yolo5IDReconOpen_Linux.py"]

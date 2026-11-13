@@ -1,0 +1,22 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+mqtt:
+  lock:
+    - name: "Gate Lock"
+      unique_id: "jetson_tx2_gate_lock"
+      command_topic: "home/gate/command"
+      state_topic: "home/gate/status"
+      payload_open: "OPEN"
+      state_locked: "Locked"
+      state_unlocked: "Unlocked"
+      optimistic: false
+      qos: 1

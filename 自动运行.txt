@@ -1,0 +1,68 @@
+Jetson 必须设置了“自动登录 (Automatic Login)
+
+在 Startup Applications 中这样配置
+为了让它开机时弹出一个可视化的终端黑窗口来执行这个脚本，我们在填写 Command (命令) 时，不能只写脚本路径，而是要借用 Ubuntu 终端（gnome-terminal）来包裹它：
+
+打开 Startup Applications（启动应用程序）。
+
+点击 Add (添加)，填写如下信息：
+
+Name (名称)：Door Lock Terminal Launcher
+
+Command (命令)：完整填写以下这行命令：
+
+gnome-terminal --title="门禁监控主程序" -- /home/nvidia/boot_launcher.sh
+
+(这行命令的意思是：开机时自动新建一个名为“门禁监控主程序”的独立终端窗口，并在里面运行你的引导脚本。)
+
+Comment (注释)：留空。
+
+点击 Save (保存)。
+
+
+怎么手动开启和关闭脚本
+
+因为你现在是用 Startup Applications（启动应用程序） 来管理的，它在开机时为你单独创建了一个名为“门禁监控主程序”的独立终端窗口（gnome-terminal）。
+
+在这种模式下，手动开启和关闭脚本非常简单、直观：
+
+🛑 如何手动关闭脚本？
+方法 A：最直观——直接去屏幕上点 X
+如果你连着显示器和鼠标：
+
+找到桌面上那个写着 “门禁监控主程序” 的黑窗口。
+
+直接点击窗口右上角的 X 按钮 把窗口关掉。
+
+或者是用鼠标点进那个黑窗口里，按下键盘上的 Ctrl + C 强行中断程序。
+
+方法 B：通过 SSH 远程命令行“击杀”
+如果你是通过 SSH 远程连接，看不到屏幕，可以通过一行命令精准结束它：
+
+Bash
+pkill -f Yolo5IDReconOpen_Linux.py
+💡 原理：pkill -f 会在系统里搜寻名字包含你脚本名的进程，然后直接发送终止信号把它安全地关闭。
+
+▶️ 如何手动开启脚本？
+如果你刚刚关闭了它，现在想手动把它重新拉起来（并依旧保持开机自启时的那种“黑窗口+打印日志”的状态），你有两种选择：
+
+方案一：在 Jetson 本地桌面重新拉起弹窗
+如果你在开发板旁边，打开一个普通的终端，运行：
+
+Bash
+gnome-terminal --title="门禁监控主程序" -- /home/nvidia/boot_launcher.sh
+这跟开机自启的效果完全一模一样，桌面上会再次蹦出那个熟悉的监控终端和 cv2.imshow 画面。
+
+方案二：通过 SSH 远程拉起（最常用）
+如果你坐在电脑前用 SSH 调试，不需要它在 Jetson 的屏幕上弹窗口，只想在你的 SSH 终端里直接看到它运行，按顺序敲这三行命令即可：
+
+Bash
+# 1. 进入工作目录
+cd /home/nvidia/yolov5
+
+# 2. 声明要把画面显示在 Jetson 连接的 0 号显示器上
+export DISPLAY=:0
+
+# 3. 直接用虚拟环境的 Python 运行它
+/home/nvidia/envs/yolo5_env/bin/python Yolo5IDReconOpen_Linux.py
+这样，程序的所有 print 日志就会直接刷在你的 SSH 屏幕上，而 cv2.imshow 的画面依然会老老实实地显示在 Jetson 连着的那个大屏幕上！

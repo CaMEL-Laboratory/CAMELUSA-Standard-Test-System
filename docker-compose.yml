@@ -1,0 +1,93 @@
+version: '3'
+
+services:
+  # 1. MQTT 消息总线微服务 (Mosquitto)
+  mqtt-broker:
+    image: eclipse-mosquitto:latest
+    container_name: mosquitto
+    restart: always
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./services/mosquitto:/mosquitto
+
+  # 2. Home Assistant 中控微服务（已修正为新架构的平级对应路径）
+  homeassistant:
+    image: homeassistant/home-assistant:2023.12.3
+    container_name: homeassistant
+    restart: always
+    network_mode: host
+    volumes:
+      - ./services/homeassistant:/config
+      - /etc/localtime:/etc/localtime:ro
+
+  # 3. 视觉门禁微服务 (Vision Service)
+  vision-service:
+    build:
+      context: .
+      dockerfile: services/vision/Dockerfile.vision
+    image: jetson-yolo-standalone20261112:v1   # 👈 修改这里，指向你刚刚做好的独立镜像
+    container_name: yolo-vision-app
+    restart: always
+    runtime: nvidia
+    network_mode: host
+    privileged: true
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0
+      - /dev/video0:/dev/video0
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ~/.Xauthority:/root/.Xauthority:rw                  # 👈 核心新增：挂载 MobaXterm X11 授权凭据
+      - /etc/localtime:/etc/localtime:ro
+      - ./configs:/app/configs
+      - ./.:/app   # 核心：将整个项目根目录挂载到 /app
+      - ~/.config/Ultralytics:/root/.config/Ultralytics # 挂载已修复的字体
+      - /home/nvidia/envs/yolo5_env:/opt/yolo5_env
+      - /opt/GeneralMVTech:/opt/GeneralMVTech   # 👈 核心新增：挂载宿主机的华睿相机 SDK 驱动及库目录
+    environment:
+      - DISPLAY=${DISPLAY:-localhost:10.0}   # 确保能捕获 MobaXterm 的转发通道
+      - XAUTHORITY=/root/.Xauthority         # 👈 核心新增：指定 X11 授权文件路径
+      - QT_X11_NO_MITSHM=1                   # 关键：避免 X11 共享内存崩溃
+      - CONFIG_PATH=/app/configs/hardware_channels.yaml
+      - SHAPE_PREDICTOR_PATH=/app/shape_predictor_68_face_landmarks.dat   # 👈 强行覆盖路径
+      - OPENBLAS_CORETYPE=ARMV8
+      - PYTHONIOENCODING=utf-8
+      - PYTHONPATH=/app
+    command: /opt/yolo5_env/bin/python /app/src/Yolo5IDReconOpen_Linux.py   # 👈 关键点：路径加上了 src/
+    depends_on:
+      - mqtt-broker
+
+  # # 4. 高频振动 DAQ 微服务 (预留扩展，路径同步对齐)
+  # daq-service:
+  #   build:
+  #     context: .
+  #     dockerfile: services/daq/Dockerfile.daq
+  #   container_name: vibration-daq-app
+  #   restart: always
+  #   network_mode: host
+  #   privileged: true
+  #   volumes:
+  #     - ./configs:/app/configs
+  #     - ./src:/app/src
+  #   environment:
+  #     - CONFIG_PATH=/app/configs/hardware_channels.yaml
+  #     - PYTHONPATH=/app
+  #   command: python src/example1_vibration_service.py
+
+  # # 5. 低频传感器遥测微服务 (预留扩展，路径同步对齐)
+  # telemetry-service:
+  #   build:
+  #     context: .
+  #     dockerfile: services/telemetry/Dockerfile.telemetry
+  #   container_name: telemetry-app
+  #   restart: always
+  #   network_mode: host
+  #   privileged: true
+  #   volumes:
+  #     - ./configs:/app/configs
+  #     - ./src:/app/src
+  #   environment:
+  #     - CONFIG_PATH=/app/configs/hardware_channels.yaml
+  #     - PYTHONPATH=/app
+  #   command: python src/example2_temp_service.py

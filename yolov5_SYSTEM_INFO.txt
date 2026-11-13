@@ -1,0 +1,185 @@
+# 项目运行环境记录表
+# 记录日期: 2026-07-14
+# 记录人: [你的名字]
+window下通过requirements.txt和conda environment.yml (适合 Conda/Miniconda 环境)恢复。linux下通过requirements.txt和yolo5_env_backup.tar.gz恢复。
+
+[基本信息]
+项目名称: /home/nvidia/yolov5
+Python 版本: (在终端输入 python --version 查看)
+Python 3.6.9
+
+
+[硬件配置]
+显卡型号: NVIDIA RTX 2000 Ada Generation
+显存大小: 16GB
+
+[驱动与核心依赖]
+#显卡驱动版本: (右键桌面 -> NVIDIA 控制面板 -> 帮助 -> 系统信息 查看)
+#CUDA 版本: (在终端输入 nvcc --version 或者nvidia-smi查看)
+#cuDNN 版本: (通常安装在 CUDA 的安装目录中，使用torch.backends.cudnn.version())
+#PyTorch 版本: (在终端输入 python -c "import torch; print(torch.__version__)" 查看)
+#nvidia-smi
+
+#显卡驱动版本
+TX2 的 GPU 是直接集成在 SoC 芯片上的，它的驱动与 JetPack 系统的 L4T 内核直接绑定。所以，你无法通过 nvidia-smi 查看版本。
+查看系统和 L4T 内核版本（即相当于驱动版本） 的命令：
+# 查看 JetPack L4T 版本
+head -n 1 /etc/nv_tegra_release
+echo# R32 (release), REVISION: 7.6, GCID: 38171779, BOARD: t186ref, EABI: aarch64, DATE: Tue Nov  5 07:49:02 UTC 2024
+
+
+#CUDA 版本
+/usr/local/cuda/bin/nvcc --version
+echo#
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2021 NVIDIA Corporation
+Built on Sun_Feb_28_22:34:44_PST_2021
+Cuda compilation tools, release 10.2, V10.2.300
+Build cuda_10.2_r440.TC440_70.29663091_0
+
+#cuDNN 版本
+python -c "import torch; print(torch.backends.cudnn.version())"或者
+cat /usr/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+echo#
+8201
+
+#PyTorch 版本
+# 先确保你在 yolo5_env 环境下
+python -c "import torch; print(torch.__version__)"
+echo#
+1.10.0
+
+[关键参数设置]
+STRICT_THRESHOLD: 0.20
+(其他你手动修改过的核心参数，例如人脸库路径、检测阈值等)
+
+[备注]
+此环境成功运行于上述配置。如果更换新设备，请优先匹配 CUDA 和 PyTorch 版本，否则可能导致报错。
+
+
+终极一键打包查询（Jetson 专属神器）
+在 Jetson TX2 上，有一个官方提供的一键查询工具，可以把系统、硬件、CUDA、cuDNN、TensorRT 版本一股脑全部列出来。在终端直接运行：
+命令如下：
+sudo jetson_clocks --show   # 或者直接运行下面这行
+apt-cache show nvidia-jetpack
+
+(yolo5_env) nvidia@E-desktop:~/yolov5$ sudo jetson_clocks --show   # 或者直接运行下面 这行
+[sudo] password for nvidia:
+Sorry, try again.
+[sudo] password for nvidia:
+Sorry, try again.
+[sudo] password for nvidia:
+SOC family:tegra186  Machine:quill
+Online CPUs: 0-5
+cpu0: Online=1 Governor=schedutil MinFreq=345600 MaxFreq=2035200 CurrentFreq=1113600 IdleStates: C1=1 c7=1
+cpu1: Online=1 Governor=schedutil MinFreq=345600 MaxFreq=2035200 CurrentFreq=345600 IdleStates: C1=1 c6=1 c7=1
+cpu2: Online=1 Governor=schedutil MinFreq=345600 MaxFreq=2035200 CurrentFreq=345600 IdleStates: C1=1 c6=1 c7=1
+cpu3: Online=1 Governor=schedutil MinFreq=345600 MaxFreq=2035200 CurrentFreq=1267200 IdleStates: C1=1 c7=1
+cpu4: Online=1 Governor=schedutil MinFreq=345600 MaxFreq=2035200 CurrentFreq=1267200 IdleStates: C1=1 c7=1
+cpu5: Online=1 Governor=schedutil MinFreq=345600 MaxFreq=2035200 CurrentFreq=1267200 IdleStates: C1=1 c7=1
+GPU MinFreq=114750000 MaxFreq=1300500000 CurrentFreq=216750000
+EMC MinFreq=40800000 MaxFreq=1866000000 CurrentFreq=665600000 FreqOverride=0
+Fan: PWM=80
+NV Power Mode: MAXN
+(yolo5_env) nvidia@E-desktop:~/yolov5$ apt-cache show nvidia-jetpack
+Package: nvidia-jetpack
+Version: 4.6.6-b24
+Architecture: arm64
+Maintainer: NVIDIA Corporation
+Installed-Size: 194
+Depends: nvidia-l4t-jetson-multimedia-api (>> 32.7-0), nvidia-l4t-jetson-multimedia-api (<< 32.8-0), nvidia-cuda (= 4.6.6-b24), nvidia-tensorrt (= 4.6.6-b24), nvidia-nsight-sys (= 4.6.6-b24), nvidia-cudnn8 (= 4.6.6-b24), nvidia-opencv (= 4.6.6-b24), nvidia-container (= 4.6.6-b24), nvidia-visionworks (= 4.6.6-b24), nvidia-vpi (= 4.6.6-b24)
+Homepage: http://developer.nvidia.com/jetson
+Priority: standard
+Section: metapackages
+Filename: pool/main/n/nvidia-jetpack/nvidia-jetpack_4.6.6-b24_arm64.deb
+Size: 29376
+SHA256: 1292cfb107353f83eb18c96e6c3fce58e07dcf5f517db6039a5469c5bb30d743
+SHA1: 62d3915566d21dad24dcc0b5147e81971e776f7f
+MD5sum: d887402512142323c5ff2811e40c2ac6
+Description: NVIDIA Jetpack Meta Package
+Description-md5: ad1462289bdbc54909ae109d1d32c0a8
+
+Package: nvidia-jetpack
+Version: 4.6.5-b29
+Architecture: arm64
+Maintainer: NVIDIA Corporation
+Installed-Size: 194
+Depends: nvidia-l4t-jetson-multimedia-api (>> 32.7-0), nvidia-l4t-jetson-multimedia-api (<< 32.8-0), nvidia-cuda (= 4.6.5-b29), nvidia-tensorrt (= 4.6.5-b29), nvidia-nsight-sys (= 4.6.5-b29), nvidia-cudnn8 (= 4.6.5-b29), nvidia-opencv (= 4.6.5-b29), nvidia-container (= 4.6.5-b29), nvidia-visionworks (= 4.6.5-b29), nvidia-vpi (= 4.6.5-b29)
+Homepage: http://developer.nvidia.com/jetson
+Priority: standard
+Section: metapackages
+Filename: pool/main/n/nvidia-jetpack/nvidia-jetpack_4.6.5-b29_arm64.deb
+Size: 29382
+SHA256: 3347532325b9e216c38274bbbc076d6f368fdd0423bad4de8860a7c2ac7da7c2
+SHA1: ad441acc5493fbcbae4f3243193bf6e47088da54
+MD5sum: 1d79a14bc5b01c0254b0fc45ec29e5db
+Description: NVIDIA Jetpack Meta Package
+Description-md5: ad1462289bdbc54909ae109d1d32c0a8
+
+Package: nvidia-jetpack
+Version: 4.6.4-b39
+Architecture: arm64
+Maintainer: NVIDIA Corporation
+Installed-Size: 194
+Depends: nvidia-l4t-jetson-multimedia-api (>> 32.7-0), nvidia-l4t-jetson-multimedia-api (<< 32.8-0), nvidia-cuda (= 4.6.4-b39), nvidia-tensorrt (= 4.6.4-b39), nvidia-nsight-sys (= 4.6.4-b39), nvidia-cudnn8 (= 4.6.4-b39), nvidia-opencv (= 4.6.4-b39), nvidia-container (= 4.6.4-b39), nvidia-visionworks (= 4.6.4-b39), nvidia-vpi (= 4.6.4-b39)
+Homepage: http://developer.nvidia.com/jetson
+Priority: standard
+Section: metapackages
+Filename: pool/main/n/nvidia-jetpack/nvidia-jetpack_4.6.4-b39_arm64.deb
+Size: 29372
+SHA256: 9b2c9b8ba59f245b53fa9c2d4ddd05017db5c1df9e26a7e01ce5fe25928e2cdd
+SHA1: b2e3184f05852db99888bed90114642f0b506618
+MD5sum: 1a1f0c74067ea5a122adb69d24965583
+Description: NVIDIA Jetpack Meta Package
+Description-md5: ad1462289bdbc54909ae109d1d32c0a8
+
+Package: nvidia-jetpack
+Version: 4.6.3-b17
+Architecture: arm64
+Maintainer: NVIDIA Corporation
+Installed-Size: 194
+Depends: nvidia-l4t-jetson-multimedia-api (>> 32.7-0), nvidia-l4t-jetson-multimedia-api (<< 32.8-0), nvidia-cuda (= 4.6.3-b17), nvidia-tensorrt (= 4.6.3-b17), nvidia-nsight-sys (= 4.6.3-b17), nvidia-cudnn8 (= 4.6.3-b17), nvidia-opencv (= 4.6.3-b17), nvidia-container (= 4.6.3-b17), nvidia-vpi (= 4.6.3-b17)
+Homepage: http://developer.nvidia.com/jetson
+Priority: standard
+Section: metapackages
+Filename: pool/main/n/nvidia-jetpack/nvidia-jetpack_4.6.3-b17_arm64.deb
+Size: 29358
+SHA256: 7ca14bc60ce91e17c0ee5d30b327d103c4d2d4cf9d34437c3865d7e9a5c5283a
+SHA1: bdfde20b6e453fec1f780d147ef6c29e0eafa723
+MD5sum: 115c7c6f0e1e971e6cce5997929f21c8
+Description: NVIDIA Jetpack Meta Package
+Description-md5: ad1462289bdbc54909ae109d1d32c0a8
+
+Package: nvidia-jetpack
+Version: 4.6.2-b5
+Architecture: arm64
+Maintainer: NVIDIA Corporation
+Installed-Size: 194
+Depends: nvidia-cuda (= 4.6.2-b5), nvidia-opencv (= 4.6.2-b5), nvidia-cudnn8 (= 4.6.2-b5), nvidia-tensorrt (= 4.6.2-b5), nvidia-visionworks (= 4.6.2-b5), nvidia-container (= 4.6.2-b5), nvidia-vpi (= 4.6.2-b5), nvidia-l4t-jetson-multimedia-api (>> 32.7-0), nvidia-l4t-jetson-multimedia-api (<< 32.8-0)
+Homepage: http://developer.nvidia.com/jetson
+Priority: standard
+Section: metapackages
+Filename: pool/main/n/nvidia-jetpack/nvidia-jetpack_4.6.2-b5_arm64.deb
+Size: 29356
+SHA256: 6e3cf64d4fb46224c213ebd0cadae22d14c25dbe6dc3628d6440beeab33fed8d
+SHA1: 35cd143b91a323dae4ecfd2d2f907a0efd2fb9aa
+MD5sum: f0c9e65929dd73796967822c2fd99f3d
+Description: NVIDIA Jetpack Meta Package
+Description-md5: ad1462289bdbc54909ae109d1d32c0a8
+
+Package: nvidia-jetpack
+Version: 4.6.1-b110
+Architecture: arm64
+Maintainer: NVIDIA Corporation
+Installed-Size: 194
+Depends: nvidia-cuda (= 4.6.1-b110), nvidia-opencv (= 4.6.1-b110), nvidia-cudnn8 (= 4.6.1-b110), nvidia-tensorrt (= 4.6.1-b110), nvidia-visionworks (= 4.6.1-b110), nvidia-container (= 4.6.1-b110), nvidia-vpi (= 4.6.1-b110), nvidia-l4t-jetson-multimedia-api (>> 32.7-0), nvidia-l4t-jetson-multimedia-api (<< 32.8-0)
+Homepage: http://developer.nvidia.com/jetson
+Priority: standard
+Section: metapackages
+Filename: pool/main/n/nvidia-jetpack/nvidia-jetpack_4.6.1-b110_arm64.deb
+Size: 29370
+SHA256: 0663eb94d983e9eb86afdce4a3c73cf2ce040055862b4e711c28cb682b5fcb6e
+SHA1: 9011104940e9095743f5e76e0f7634dd04dedb93
+MD5sum: 8f6d3d3acb592faae54deed432f34b20
+Description: NVIDIA Jetpack Meta Package
+Description-md5: ad1462289bdbc54909ae109d1d32c0a8

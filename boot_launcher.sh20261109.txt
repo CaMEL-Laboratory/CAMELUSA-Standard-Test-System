@@ -1,0 +1,40 @@
+#!/bin/bash
+# 1. 开机进桌面后延迟 3 秒，等硬件驱动完全加载
+sleep 3
+
+echo "=========================================="
+echo "🚀 正在执行门禁系统自启脚本..."
+echo "=========================================="
+
+# 2. 检查并打印硬件状态
+echo "=== 检查 USB 串口设备 ==="
+ls -l /dev/ttyUSB*
+echo "=== 检查摄像头视频设备 ==="
+ls -l /dev/video*
+echo "=========================================="
+
+# 3. 指定显示器并进入目录
+export DISPLAY=:0
+
+# 🌟 修复 Illegal instruction (core dumped) 的核心环境变量 🌟
+export OPENBLAS_CORETYPE=ARMV8
+export OMP_NUM_THREADS=1
+
+cd /home/nvidia/yolov5
+
+# 4. 🔥【新加功能】：自动守护循环（24x7 崩溃自动重新拉起）
+while true
+do
+    echo "=========================================="
+    echo "🚀 [$(date '+%Y-%m-%d %H:%M:%S')] 启动门禁主程序..."
+    echo "=========================================="
+    
+    # 使用虚拟环境的 Python 绝对路径运行主程序
+    /home/nvidia/envs/yolo5_env/bin/python Yolo5IDReconOpen_Linux.py
+
+    echo "=========================================="
+    echo "⚠️ [$(date '+%Y-%m-%d %H:%M:%S')] 门禁程序意外退出或崩溃！"
+    echo "🔄 5 秒后将自动重新拉起程序..."
+    echo "=========================================="
+    sleep 5
+done

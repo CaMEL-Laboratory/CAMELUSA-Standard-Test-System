@@ -1,0 +1,236 @@
+[2026-11-12 02:31:22.376] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:31:22.383] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:31:22.384] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:31:41.122] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:31:41.127] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:31:41.128] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:31:59.795] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:31:59.801] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:31:59.802] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:32:18.562] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:32:18.567] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:32:18.568] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:32:37.244] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:32:37.251] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:32:37.251] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:32:55.940] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:32:55.946] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:32:55.947] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:33:14.801] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:33:14.807] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:33:14.808] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:33:33.614] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:33:33.620] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:33:33.621] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:33:52.546] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:33:52.553] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:33:52.553] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:34:11.519] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:34:11.524] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:34:11.525] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:34:30.410] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:34:30.416] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:34:30.417] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:34:49.311] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:34:49.316] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:34:49.317] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:35:08.252] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:35:08.257] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:35:08.258] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:35:27.357] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:35:27.363] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:35:27.364] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:35:46.302] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:35:46.308] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:35:46.308] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:36:05.317] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:36:05.322] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:36:05.323] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:36:24.325] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:36:24.333] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:36:24.334] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:36:43.285] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:36:43.290] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:36:43.291] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:37:02.199] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:37:02.204] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:37:02.205] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:37:21.055] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:37:21.060] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:37:21.061] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:37:39.981] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:37:39.987] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:37:39.988] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:37:58.946] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:37:58.954] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:37:58.955] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:38:17.788] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:38:17.794] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:38:17.794] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:38:36.714] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:38:36.720] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:38:36.721] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:38:55.815] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:38:55.820] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:38:55.821] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:39:14.777] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:39:14.782] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:39:14.783] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:39:33.919] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:39:33.929] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:39:33.930] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:39:52.906] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:39:52.911] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:39:52.913] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:40:11.804] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:40:11.810] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:40:11.811] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:40:30.732] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:40:30.739] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:40:30.739] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:40:49.682] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:40:49.688] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:40:49.688] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:41:08.720] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:41:08.726] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:41:08.726] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:41:27.631] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:41:27.637] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:41:27.638] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:41:46.572] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:41:46.578] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:41:46.578] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:42:05.508] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:42:05.515] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:42:05.516] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:42:24.663] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:42:24.669] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:42:24.669] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:42:43.755] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:42:43.761] [ERROR] ❌ 加载 MVSDK 失败: [Errno 2] No such file or directory: '/opt/GeneralMVTech/MVviewer/share/Python'
+[2026-11-12 02:42:43.762] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:43:02.763] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:43:02.769] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:43:02.770] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:43:04.090] [ERROR] ❌ 找不到 dlib 面部特征点模型文件: /home/nvidia/yolov5/shape_predictor_68_face_landmarks.dat
+[2026-11-12 02:43:21.279] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:43:21.285] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:43:21.286] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:43:22.613] [ERROR] ❌ 找不到 dlib 面部特征点模型文件: /home/nvidia/yolov5/shape_predictor_68_face_landmarks.dat
+[2026-11-12 02:43:40.149] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:43:40.155] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:43:40.156] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:43:57.331] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:43:57.337] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:43:57.338] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:43:58.659] [ERROR] ❌ 找不到 dlib 面部特征点模型文件: /home/nvidia/yolov5/shape_predictor_68_face_landmarks.dat
+[2026-11-12 02:44:15.849] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:44:15.856] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:44:15.856] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:44:17.177] [ERROR] ❌ 找不到 dlib 面部特征点模型文件: /home/nvidia/yolov5/shape_predictor_68_face_landmarks.dat
+[2026-11-12 02:44:34.503] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:44:34.509] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:44:34.510] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:44:35.834] [ERROR] ❌ 找不到 dlib 面部特征点模型文件: /home/nvidia/yolov5/shape_predictor_68_face_landmarks.dat
+[2026-11-12 02:44:53.068] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:44:53.075] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:44:53.075] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:44:54.403] [ERROR] ❌ 找不到 dlib 面部特征点模型文件: /home/nvidia/yolov5/shape_predictor_68_face_landmarks.dat
+[2026-11-12 02:45:11.713] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:45:11.719] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:45:11.720] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:45:13.048] [ERROR] ❌ 找不到 dlib 面部特征点模型文件: /home/nvidia/yolov5/shape_predictor_68_face_landmarks.dat
+[2026-11-12 02:45:30.232] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:45:30.238] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:45:30.238] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:45:31.567] [ERROR] ❌ 找不到 dlib 面部特征点模型文件: /home/nvidia/yolov5/shape_predictor_68_face_landmarks.dat
+[2026-11-12 02:45:48.777] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:45:48.782] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:45:48.783] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:45:50.100] [ERROR] ❌ 找不到 dlib 面部特征点模型文件: /home/nvidia/yolov5/shape_predictor_68_face_landmarks.dat
+[2026-11-12 02:46:31.820] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:46:31.828] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:46:31.829] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:46:36.958] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:46:55.537] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:46:55.544] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:46:55.545] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:47:00.269] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:47:17.800] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:47:17.806] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:47:17.806] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:47:22.456] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:47:39.788] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:47:39.794] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:47:39.794] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:47:44.395] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:48:01.837] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:48:01.843] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:48:01.843] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:48:06.508] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:48:24.019] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:48:24.024] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:48:24.025] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:48:28.659] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:48:46.110] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:48:46.116] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:48:46.118] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:48:50.751] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:49:08.351] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:49:08.357] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:49:08.357] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:49:13.014] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:49:30.527] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:49:30.533] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:49:30.533] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:49:35.258] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:49:52.579] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:49:52.585] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:49:52.585] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:49:57.193] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:50:14.687] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:50:14.693] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:50:14.693] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:50:19.427] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:50:36.888] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:50:36.895] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:50:36.895] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:50:41.651] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:50:58.973] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:50:58.980] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:50:58.981] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:51:03.603] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:51:21.033] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:51:21.038] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:51:21.039] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:51:25.754] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:51:43.506] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:51:43.513] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:51:43.514] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:51:49.148] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:52:14.912] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:52:14.920] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:52:14.921] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:52:20.301] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:52:35.502] [INFO] 正在加载已知人脸库...
+[2026-11-12 02:53:55.180] [INFO] 成功录入 14 张已知人脸特征！
+[2026-11-12 02:53:55.186] [INFO] 🎙️ Alexa 语音控制后台线程初始化完成！
+[2026-11-12 02:53:55.187] [INFO] 🎙️ SSDP 监听服务已成功绑定到网卡 IP: 10.0.0.58:1900
+[2026-11-12 02:53:55.188] [INFO] 🌐 WeMo 模拟控制 HTTP 服务已启动，监听端口: 49153
+[2026-11-12 02:54:17.363] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:54:17.371] [WARNING] ⚠️ 未检测到华睿相机 SDK 路径 (/opt/GeneralMVTech/MVviewer/share/Python)，将以跳过/模拟模式运行。
+[2026-11-12 02:54:17.371] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:54:22.130] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:54:35.000] [INFO] 正在加载已知人脸库...
+[2026-11-12 02:54:49.081] [INFO] 🛑 收到进程终止信号 (signal: 15)，门禁控制系统正在安全退出...
+[2026-11-12 02:55:17.732] [INFO] 🚀 门禁控制系统启动，当前记录保存目录: /app/src/../records/2026-11-12
+[2026-11-12 02:55:17.740] [INFO] ✅ 成功连接到本地 MQTT Broker!
+[2026-11-12 02:55:18.011] [INFO] ✅ 成功加载华睿相机 MVSDK 库！
+[2026-11-12 02:55:23.823] [INFO] ✅ 串口 /dev/ttyUSB0 初始化成功，引脚已锁定！
+[2026-11-12 02:55:36.524] [INFO] 正在加载已知人脸库...
+[2026-11-12 02:56:54.362] [INFO] 成功录入 14 张已知人脸特征！
+[2026-11-12 02:56:54.365] [INFO] 🎙️ SSDP 监听服务已成功绑定到网卡 IP: 10.0.0.58:1900
+[2026-11-12 02:56:54.366] [INFO] 🎙️ Alexa 语音控制后台线程初始化完成！
+[2026-11-12 02:56:54.368] [INFO] 🌐 WeMo 模拟控制 HTTP 服务已启动，监听端口: 49153
+[2026-11-12 02:56:57.116] [INFO] 🚀 工业相机已成功启动拉流！
+[2026-11-12 03:06:13.197] [INFO] 💓 [心跳同步] 收到来自 10.0.0.20 的状态查询心跳，当前门状态: Locked

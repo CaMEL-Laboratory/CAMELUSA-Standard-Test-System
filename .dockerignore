@@ -1,0 +1,6 @@
+services/homeassistant
+services/mosquitto
+records
+.git
+__pycache__
+*.tar

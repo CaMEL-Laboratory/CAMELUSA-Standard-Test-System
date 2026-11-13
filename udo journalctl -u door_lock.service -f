@@ -1,0 +1,5 @@
+● door_lock.service - Face Recognition Door Lock Service
+   Loaded: loaded (/etc/systemd/system/door_lock.service; enabled; vendor preset: enabled)
+   Active: activating (auto-restart) (Result: core-dump) since Fri 2026-07-17 10:11:43 PDT; 3s ago
+  Process: 9994 ExecStart=/home/nvidia/envs/yolo5_env/bin/python /home/nvidia/yolov5/Yolo5IDReconOpen_Linux.py [0;1;31m(code=dumped, signal=ILL)[0m
+ Main PID: 9994 (code=dumped, signal=ILL)

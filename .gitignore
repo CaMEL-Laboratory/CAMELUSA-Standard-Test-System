@@ -1,0 +1,52 @@
+# ================= =
+# 1. Python 缓存与虚拟环境
+# ================= =
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+envs/
+.venv/
+.env
+
+# ================= =
+# 2. YOLOv5 模型权重、离线镜像与导出产物（绝对不传 GitHub）
+# ================= =
+*.pt
+weights/
+*.tar
+*.onnx
+*.engine
+*.torchscript
+
+# ================= =
+# 3. 运行日志、训练输出与临时文件
+# ================= =
+runs/
+*.log
+*.cache
+
+# ================= =
+# 4. 常见数据集目录（防止把几个G的图片和标注传到云端）
+# ================= =
+datasets/
+data/coco/
+data/VOC/
+
+# ================= =
+# 5. 编辑器与操作系统隐藏文件
+# ================= =
+# Windows
+Thumbs.db
+desktop.ini
+
+# macOS
+.DS_Store
+
+# IDE / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.ipynb_checkpoints/*.dat

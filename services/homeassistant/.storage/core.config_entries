@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.config_entries",
+  "data": {
+    "entries": [
+      {
+        "entry_id": "89ca298af863380cf34bcc2acbb79ef0",
+        "version": 1,
+        "domain": "sun",
+        "title": "Sun",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "fce77691fb238673f207e58a464536cf",
+        "version": 1,
+        "domain": "cast",
+        "title": "Google Cast",
+        "data": {
+          "ignore_cec": [],
+          "known_hosts": [],
+          "uuid": [],
+          "user_id": "a943f60347de4854a4c8940cd77def69"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "zeroconf",
+        "unique_id": "cast",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "b1f46a2ea0370c8afec93466cb793ed7",
+        "version": 1,
+        "domain": "wemo",
+        "title": "Wemo",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ssdp",
+        "unique_id": "wemo",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "359a13bfa1428a47a138fec32050ecd7",
+        "version": 1,
+        "domain": "shopping_list",
+        "title": "Shopping list",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": "shopping_list",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "9c918ac996ca1a51bbfe31b7ad3dfb4b",
+        "version": 1,
+        "domain": "google_translate",
+        "title": "Google Translate text-to-speech",
+        "data": {
+          "language": "en",
+          "tld": "com"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "b79096a4a4dd4985d5462d685743067b",
+        "version": 1,
+        "domain": "radio_browser",
+        "title": "Radio Browser",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "cce61ee2f0eb7bf35cda8bb5cac77c10",
+        "version": 1,
+        "domain": "mqtt",
+        "title": "127.0.0.1",
+        "data": {
+          "broker": "127.0.0.1",
+          "port": 1883,
+          "discovery": true
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "98a7aa500936461ffa7ea9de4122e04e",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "Mob",
+        "data": {
+          "app_id": "io.robbie.HomeAssistant",
+          "app_name": "Home Assistant",
+          "app_data": {
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification",
+            "push_token": "dY3TekwkekoosXt5tm255e:APA91bGW_1ynlZVUHVo9EnVFua5B1Dg-hxr_2gBzZ8PnG67ZsHO5tB1IjzGl-tAaiAfJJaFRfbZXrCELuNAKzPn0-dipNJBS8qGO9iiX4wHY4xduUROMVIg"
+          },
+          "app_version": "2026.10.1 (2026.3213)",
+          "os_version": "16.7.12",
+          "device_name": "Mob",
+          "supports_encryption": true,
+          "model": "iPhone10,2",
+          "os_name": "iOS",
+          "manufacturer": "Apple",
+          "device_id": "3E979933-AAA7-4FB4-A804-227D9FB223E5",
+          "webhook_id": "7127dcadbb050559a2dec8e64428615f871845e97295cd7388d3fc67bd98a983",
+          "secret": "8ceba10978000151673c154523d5739c9a1db4b422cd312cabe043d69ff4a619",
+          "user_id": "e06b78b4d6ad41b7a628345fa9cc44df",
+          "no_legacy_encryption": true
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.robbie.HomeAssistant-3E979933-AAA7-4FB4-A804-227D9FB223E5",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "bd82fa80d93c2027f5a4c29f1d0e466a",
+        "version": 1,
+        "domain": "androidtv_remote",
+        "title": "Tv",
+        "data": {
+          "host": "10.0.0.214",
+          "name": "Tv",
+          "mac": "50:BA:02:94:C1:D8"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "zeroconf",
+        "unique_id": "50:ba:02:94:c1:d8",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "392db496f10ac118b0ef4b5008a01f2e",
+        "version": 1,
+        "domain": "dlna_dmr",
+        "title": "我的小电视",
+        "data": {
+          "url": "http://10.0.0.214:9958/bilibili/description.xml",
+          "device_id": "uuid:XY64BC26E895D6C13423E42D95EB005E4E76D",
+          "type": "urn:schemas-upnp-org:device:MediaRenderer:1",
+          "mac": "50:ba:02:94:c1:d9"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ssdp",
+        "unique_id": "uuid:XY64BC26E895D6C13423E42D95EB005E4E76D",
+        "disabled_by": null
+      }
+    ]
+  }
+}

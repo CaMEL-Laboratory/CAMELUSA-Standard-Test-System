@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=gnome-terminal --title="门禁监控主程序" -- /home/nvidia/yolov5/boot_launcher.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Door Lock Launcher
+Name=Door Lock Launcher
+Comment[en_US]=Autostart gate access controller script
+Comment=Autostart gate access controller script

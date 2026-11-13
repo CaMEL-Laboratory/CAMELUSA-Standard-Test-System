@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "aliases": [],
+        "name": "客厅",
+        "id": "ke_ting",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "厨房",
+        "id": "chu_fang",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "卧室",
+        "id": "wo_shi",
+        "picture": null
+      }
+    ]
+  }
+}
