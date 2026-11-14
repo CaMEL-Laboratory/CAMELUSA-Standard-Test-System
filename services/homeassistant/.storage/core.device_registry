@@ -32,42 +32,17 @@
       {
         "area_id": null,
         "config_entries": [
-          "fce77691fb238673f207e58a464536cf"
-        ],
-        "configuration_url": null,
-        "connections": [],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": null,
-        "id": "0cedf6dffe92ad5f7d0416bebd313e6e",
-        "identifiers": [
-          [
-            "cast",
-            "3a53759b7c52b8b4bf3481229ce38073"
-          ]
-        ],
-        "manufacturer": "Hisense",
-        "model": "SmartTV 4K FFM",
-        "name_by_user": null,
-        "name": "Tv",
-        "serial_number": null,
-        "sw_version": null,
-        "via_device_id": null
-      },
-      {
-        "area_id": null,
-        "config_entries": [
           "392db496f10ac118b0ef4b5008a01f2e"
         ],
         "configuration_url": null,
         "connections": [
           [
-            "upnp",
-            "uuid:XY64BC26E895D6C13423E42D95EB005E4E76D"
-          ],
-          [
             "mac",
             "50:ba:02:94:c1:d9"
+          ],
+          [
+            "upnp",
+            "uuid:XY64BC26E895D6C13423E42D95EB005E4E76D"
           ]
         ],
         "disabled_by": null,
@@ -136,6 +111,31 @@
         "name": "Mob",
         "serial_number": null,
         "sw_version": "16.7.12",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "fce77691fb238673f207e58a464536cf"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0cedf6dffe92ad5f7d0416bebd313e6e",
+        "identifiers": [
+          [
+            "cast",
+            "3a53759b7c52b8b4bf3481229ce38073"
+          ]
+        ],
+        "manufacturer": "Hisense",
+        "model": "SmartTV 4K FFM",
+        "name_by_user": null,
+        "name": "Tv",
+        "serial_number": null,
+        "sw_version": null,
         "via_device_id": null
       }
     ],

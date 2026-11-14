@@ -68,7 +68,7 @@ def load_hardware_config():
             "relay_serial_port": "/dev/ttyUSB0",
             "baudrate": 9600,
             "local_ip": "10.0.0.58",
-            "wemo_port": 49153,
+            "wemo_port": 8080,
             "device_name": "Gate Lock",
             "device_uuid": "Socket-1_0-220000000001"
         },
@@ -340,27 +340,39 @@ def ssdp_listener():
     MCAST_PORT = 1900
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    sock.bind((LOCAL_IP, MCAST_PORT))
-    mreq = socket.inet_aton(MCAST_GRP) + socket.inet_aton(LOCAL_IP)
-    sock.setsockopt(socket.IPPROTO_IP, socket.IP_ADD_MEMBERSHIP, mreq)
-    logger.info(f"🎙️ SSDP 监听服务已成功绑定到网卡 IP: {LOCAL_IP}:{MCAST_PORT}")
+    
+    try:
+        sock.bind(('', MCAST_PORT))  # 绑定所有网卡的 1900 端口，确保万无一失
+        mreq = socket.inet_aton(MCAST_GRP) + socket.inet_aton(LOCAL_IP)
+        sock.setsockopt(socket.IPPROTO_IP, socket.IP_ADD_MEMBERSHIP, mreq)
+        logger.info(f"🎙️ SSDP 监听服务已成功绑定到端口: {MCAST_PORT}")
+    except Exception as e:
+        logger.error(f"❌ [致命错误] SSDP 绑定端口失败: {e}", exc_info=True)
+        return
 
     last_log_times = {}
     while True:
         try:
             data, addr = sock.recvfrom(1024)
-            if addr[0].startswith("172.") or addr[0].startswith("127.") or addr[0].startswith("192.168.122."):
+            
+            # 过滤本机发出的噪声
+            if addr[0] == LOCAL_IP or addr[0].startswith("127."):
                 continue
-            if b'M-SEARCH' in data and (b'upnp:rootdevice' in data or b'ssdp:all' in data or b'belkin' in data.lower()):
+
+            # 🔍 无论大小写，只要包含 m-search，就强行打印并响应！
+            if b'm-search' in data.lower():
+                # 限制同个 IP 的打印频率，防止日志刷屏
+                now_t = time.time()
+                if now_t - last_log_times.get(addr[0], 0) > 3.0:
+                    last_log_times[addr[0]] = now_t
+
+                # 构造 WeMo 响应报文并无条件单播回给 Echo
                 resp = SSDP_RESPONSE.format(ip=LOCAL_IP, port=WEMO_PORT, uuid=DEVICE_UUID).encode()
                 sock.sendto(resp, addr)
-                if addr[0] != LOCAL_IP:
-                    now_t = time.time()
-                    if now_t - last_log_times.get(addr[0], 0) > 10.0:
-                        last_log_times[addr[0]] = now_t
-                        logger.info(f"📡 [SSDP] 收到来自 {addr[0]} 的发现请求，已成功响应 WeMo 身份！")
-        except Exception:
-            pass
+                
+        except Exception as e:
+            logger.error(f"❌ [SSDP 异常] {e}")
+            time.sleep(1)
 
 # ==================== 🌐 按需推流（Lazy Loading）共享变量与计数器 ====================
 LATEST_JPEG_FRAME = None
@@ -616,7 +628,7 @@ class DahuaCamera:
 
         if self.streamSource.contents.startGrabbing(self.streamSource, c_ulonglong(0), c_int(GENICAM_EGrabStrategy.grabStrartegyLatestImage)) != 0:
             return False
-        logger.info("🚀 工业相机已成功启动拉流！")
+        logger.info("💗 工业相机已成功启动拉流！")
         return True
 
     def get_frame(self):

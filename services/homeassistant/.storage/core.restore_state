@@ -10,8 +10,8 @@
         "attributes": {
           "editable": true,
           "id": "home",
-          "latitude": 47.358814013474756,
-          "longitude": -122.04476172557551,
+          "latitude": 47.358795166015625,
+          "longitude": -122.04476239722909,
           "gps_accuracy": 11.809977003913362,
           "source": "device_tracker.mob",
           "user_id": "e06b78b4d6ad41b7a628345fa9cc44df",
@@ -20,16 +20,16 @@
           ],
           "friendly_name": "Home"
         },
-        "last_changed": "2026-11-12T20:38:16.888164+00:00",
-        "last_updated": "2026-11-12T20:38:42.006443+00:00",
+        "last_changed": "2026-11-14T02:59:46.781040+00:00",
+        "last_updated": "2026-11-14T03:00:06.968663+00:00",
         "context": {
-          "id": "01M78QQV2P7WGBK83ZYRNYEH60",
+          "id": "01M7BZYYNRX4HHFCFFN1MS6YEB",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2026-11-12T20:53:42.006600+00:00"
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
     },
     {
       "state": {
@@ -38,16 +38,596 @@
         "attributes": {
           "friendly_name": "Google en com"
         },
-        "last_changed": "2026-11-12T20:38:39.234749+00:00",
-        "last_updated": "2026-11-12T20:38:39.234749+00:00",
+        "last_changed": "2026-11-14T03:00:05.434171+00:00",
+        "last_updated": "2026-11-14T03:00:05.434171+00:00",
         "context": {
-          "id": "01M78QQRC2680W9GBFAJH9ASES",
+          "id": "01M7BZYX5T8HEAGBPMFQG40G2R",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2026-11-12T20:53:42.006600+00:00"
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_activity",
+        "state": "unavailable",
+        "attributes": {
+          "icon": "mdi:dots-square",
+          "friendly_name": "Mob Activity"
+        },
+        "last_changed": "2026-11-14T03:00:05.503135+00:00",
+        "last_updated": "2026-11-14T03:00:05.503135+00:00",
+        "context": {
+          "id": "01M7BZYX7ZTYWZGJSBJ1EW6XEF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "unavailable",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_distance",
+        "state": "unavailable",
+        "attributes": {
+          "icon": "mdi:dots-square",
+          "friendly_name": "Mob Distance"
+        },
+        "last_changed": "2026-11-14T03:00:05.504021+00:00",
+        "last_updated": "2026-11-14T03:00:05.504021+00:00",
+        "context": {
+          "id": "01M7BZYX80W5S3HFZ4PFK720ZP",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "unavailable",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_average_active_pace",
+        "state": "unavailable",
+        "attributes": {
+          "icon": "mdi:dots-square",
+          "friendly_name": "Mob Average Active Pace"
+        },
+        "last_changed": "2026-11-14T03:00:05.504763+00:00",
+        "last_updated": "2026-11-14T03:00:05.504763+00:00",
+        "context": {
+          "id": "01M7BZYX80G561S9JSTFDSH9NJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "unavailable",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_floors_descended",
+        "state": "unavailable",
+        "attributes": {
+          "icon": "mdi:dots-square",
+          "friendly_name": "Mob Floors Descended"
+        },
+        "last_changed": "2026-11-14T03:00:05.505536+00:00",
+        "last_updated": "2026-11-14T03:00:05.505536+00:00",
+        "context": {
+          "id": "01M7BZYX811MMEGQ3E2E81J0J8",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "unavailable",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_current_pace",
+        "state": "unavailable",
+        "attributes": {
+          "icon": "mdi:dots-square",
+          "friendly_name": "Mob Current Pace"
+        },
+        "last_changed": "2026-11-14T03:00:05.506284+00:00",
+        "last_updated": "2026-11-14T03:00:05.506284+00:00",
+        "context": {
+          "id": "01M7BZYX82NPV32MDFSGYFRCJ9",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "unavailable",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_steps",
+        "state": "unavailable",
+        "attributes": {
+          "icon": "mdi:dots-square",
+          "friendly_name": "Mob Steps"
+        },
+        "last_changed": "2026-11-14T03:00:05.506985+00:00",
+        "last_updated": "2026-11-14T03:00:05.506985+00:00",
+        "context": {
+          "id": "01M7BZYX823HMW8RY29B2SMEC1",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "unavailable",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_floors_ascended",
+        "state": "unavailable",
+        "attributes": {
+          "icon": "mdi:dots-square",
+          "friendly_name": "Mob Floors Ascended"
+        },
+        "last_changed": "2026-11-14T03:00:05.507673+00:00",
+        "last_updated": "2026-11-14T03:00:05.507673+00:00",
+        "context": {
+          "id": "01M7BZYX83ZG7C1SZ55DRRK207",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "unavailable",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_current_cadence",
+        "state": "unavailable",
+        "attributes": {
+          "icon": "mdi:dots-square",
+          "friendly_name": "Mob Current Cadence"
+        },
+        "last_changed": "2026-11-14T03:00:05.508383+00:00",
+        "last_updated": "2026-11-14T03:00:05.508383+00:00",
+        "context": {
+          "id": "01M7BZYX84241WEADN0CSAVAXN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "unavailable",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_battery_level",
+        "state": "86",
+        "attributes": {
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-80",
+          "friendly_name": "Mob Battery Level"
+        },
+        "last_changed": "2026-11-14T03:00:05.509347+00:00",
+        "last_updated": "2026-11-14T03:00:05.509347+00:00",
+        "context": {
+          "id": "01M7BZYX85QNKZ4F6CDBDWH2Y5",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 86,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_battery_state",
+        "state": "Not Charging",
+        "attributes": {
+          "Low Power Mode": false,
+          "icon": "mdi:battery-80",
+          "friendly_name": "Mob Battery State"
+        },
+        "last_changed": "2026-11-14T03:00:05.510257+00:00",
+        "last_updated": "2026-11-14T03:00:05.510257+00:00",
+        "context": {
+          "id": "01M7BZYX863JBAGEXT5NGZXC8D",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Not Charging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_storage",
+        "state": "1.04",
+        "attributes": {
+          "Available": "1.96 GB",
+          "Available (Important)": "4.74 GB",
+          "Available (Opportunistic)": "2.65 GB",
+          "Total": "255.98 GB",
+          "unit_of_measurement": "% available",
+          "icon": "mdi:database",
+          "friendly_name": "Mob Storage"
+        },
+        "last_changed": "2026-11-14T03:00:05.511054+00:00",
+        "last_updated": "2026-11-14T03:00:05.511054+00:00",
+        "context": {
+          "id": "01M7BZYX87EYQEQM3K5718QP4N",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "1.04",
+        "native_unit_of_measurement": "% available"
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_ssid",
+        "state": "Not Connected",
+        "attributes": {
+          "icon": "mdi:wifi-off",
+          "friendly_name": "Mob SSID"
+        },
+        "last_changed": "2026-11-14T03:00:05.511799+00:00",
+        "last_updated": "2026-11-14T03:00:05.511799+00:00",
+        "context": {
+          "id": "01M7BZYX87H2TVCEGRWZEHD52Y",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Not Connected",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_bssid",
+        "state": "Not Connected",
+        "attributes": {
+          "icon": "mdi:wifi-off",
+          "friendly_name": "Mob BSSID"
+        },
+        "last_changed": "2026-11-14T03:00:05.512492+00:00",
+        "last_updated": "2026-11-14T03:00:05.512492+00:00",
+        "context": {
+          "id": "01M7BZYX880VY7CANMARNESCMX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Not Connected",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_connection_type",
+        "state": "Wi-Fi",
+        "attributes": {
+          "icon": "mdi:wifi",
+          "friendly_name": "Mob Connection Type"
+        },
+        "last_changed": "2026-11-14T03:00:05.513285+00:00",
+        "last_updated": "2026-11-14T03:00:05.513285+00:00",
+        "context": {
+          "id": "01M7BZYX89BMHBNQ7GYF5Z6TGC",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Wi-Fi",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_sim_1",
+        "state": "--",
+        "attributes": {
+          "Allows VoIP": true,
+          "Carrier ID": "0000000100000001",
+          "Carrier Name": "--",
+          "Current Radio Technology": "Long-Term Evolution (LTE)",
+          "ISO Country Code": "--",
+          "Mobile Country Code": "65535",
+          "Mobile Network Code": "65535",
+          "icon": "mdi:sim",
+          "friendly_name": "Mob SIM 1"
+        },
+        "last_changed": "2026-11-14T03:00:05.514039+00:00",
+        "last_updated": "2026-11-14T03:00:05.514039+00:00",
+        "context": {
+          "id": "01M7BZYX8A7WGBK83ZYRNYEH60",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "--",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_last_update_trigger",
+        "state": "Launch",
+        "attributes": {
+          "icon": "mdi:cellphone-wireless",
+          "friendly_name": "Mob Last Update Trigger"
+        },
+        "last_changed": "2026-11-14T03:00:05.514699+00:00",
+        "last_updated": "2026-11-14T03:00:05.514699+00:00",
+        "context": {
+          "id": "01M7BZYX8AVTAY9WZW0TBX0MRM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Launch",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_app_version",
+        "state": "2026.10.3",
+        "attributes": {
+          "icon": "mdi:cellphone",
+          "friendly_name": "Mob App Version"
+        },
+        "last_changed": "2026-11-14T03:00:05.515380+00:00",
+        "last_updated": "2026-11-14T03:00:05.515380+00:00",
+        "context": {
+          "id": "01M7BZYX8B1QPAYDNZ1SJMGKNR",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "2026.10.3",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_location_permission",
+        "state": "Denied",
+        "attributes": {
+          "icon": "mdi:map",
+          "friendly_name": "Mob Location permission"
+        },
+        "last_changed": "2026-11-14T03:00:05.516007+00:00",
+        "last_updated": "2026-11-14T03:00:05.516007+00:00",
+        "context": {
+          "id": "01M7BZYX8CYCWPXA2EWQ20Q2CK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Denied",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_audio_output",
+        "state": "Built-in Speaker",
+        "attributes": {
+          "icon": "mdi:volume-high",
+          "friendly_name": "Mob Audio Output"
+        },
+        "last_changed": "2026-11-14T03:00:05.516716+00:00",
+        "last_updated": "2026-11-14T03:00:05.516716+00:00",
+        "context": {
+          "id": "01M7BZYX8C4Q6RZ5K0Q81WT363",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Built-in Speaker",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_pressure",
+        "state": "unavailable",
+        "attributes": {
+          "icon": "mdi:dots-square",
+          "friendly_name": "Mob Pressure"
+        },
+        "last_changed": "2026-11-14T03:00:05.517390+00:00",
+        "last_updated": "2026-11-14T03:00:05.517390+00:00",
+        "context": {
+          "id": "01M7BZYX8DWHSHQWW1X0X5D426",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "unavailable",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_kiosk_brightness",
+        "state": "40",
+        "attributes": {
+          "unit_of_measurement": "%",
+          "icon": "mdi:brightness-6",
+          "friendly_name": "Mob Kiosk Brightness"
+        },
+        "last_changed": "2026-11-14T03:00:05.518094+00:00",
+        "last_updated": "2026-11-14T03:00:05.518094+00:00",
+        "context": {
+          "id": "01M7BZYX8EFP729W56DHPE828Y",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 40,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_kiosk_volume",
+        "state": "25",
+        "attributes": {
+          "unit_of_measurement": "%",
+          "icon": "mdi:volume-high",
+          "friendly_name": "Mob Kiosk Volume"
+        },
+        "last_changed": "2026-11-14T03:00:05.518763+00:00",
+        "last_updated": "2026-11-14T03:00:05.518763+00:00",
+        "context": {
+          "id": "01M7BZYX8E4XWHKP2AJZQRR817",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 25,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mob_geocoded_location",
+        "state": "unknown",
+        "attributes": {
+          "icon": "mdi:map",
+          "friendly_name": "Mob Geocoded Location"
+        },
+        "last_changed": "2026-11-14T03:00:05.519402+00:00",
+        "last_updated": "2026-11-14T03:00:05.519402+00:00",
+        "context": {
+          "id": "01M7BZYX8FRSX0G8XY1EQPRR00",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.mob_focus",
+        "state": "off",
+        "attributes": {
+          "icon": "mdi:dots-square",
+          "friendly_name": "Mob Focus"
+        },
+        "last_changed": "2026-11-14T03:00:05.522299+00:00",
+        "last_updated": "2026-11-14T03:00:05.522299+00:00",
+        "context": {
+          "id": "01M7BZYX8J90P81WF6C9PW0T34",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.mob_kiosk_mode",
+        "state": "off",
+        "attributes": {
+          "icon": "mdi:tablet",
+          "friendly_name": "Mob Kiosk Mode"
+        },
+        "last_changed": "2026-11-14T03:00:05.522871+00:00",
+        "last_updated": "2026-11-14T03:00:05.522871+00:00",
+        "context": {
+          "id": "01M7BZYX8J9HQPH8YP18XSJCAZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.mob_kiosk_screensaver",
+        "state": "off",
+        "attributes": {
+          "icon": "mdi:sleep-off",
+          "friendly_name": "Mob Kiosk Screensaver"
+        },
+        "last_changed": "2026-11-14T03:00:05.523315+00:00",
+        "last_updated": "2026-11-14T03:00:05.523315+00:00",
+        "context": {
+          "id": "01M7BZYX8KPJ8WJV11G7AE45CG",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
     },
     {
       "state": {
@@ -55,24 +635,24 @@
         "state": "not_home",
         "attributes": {
           "source_type": "gps",
-          "battery_level": 81,
-          "latitude": 47.358814013474756,
-          "longitude": -122.04476172557551,
+          "battery_level": 94,
+          "latitude": 47.358795166015625,
+          "longitude": -122.04476239722909,
           "gps_accuracy": 11.809977003913362,
-          "altitude": 164.26071548461914,
-          "vertical_accuracy": 3.5027554035186768,
+          "altitude": 164.25289916992188,
+          "vertical_accuracy": 6.170949935913086,
           "friendly_name": "Mob"
         },
-        "last_changed": "2026-11-12T20:38:39.292093+00:00",
-        "last_updated": "2026-11-12T20:38:39.292093+00:00",
+        "last_changed": "2026-11-14T03:00:05.528604+00:00",
+        "last_updated": "2026-11-14T03:00:05.528604+00:00",
         "context": {
-          "id": "01M78QQRDW8HEAGBPMFQG40G2R",
+          "id": "01M7BZYX8R8QQJTA70KTW4JG39",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2026-11-12T20:53:42.006600+00:00"
+      "last_seen": "2026-11-14T03:00:06.970681+00:00"
     }
   ]
 }

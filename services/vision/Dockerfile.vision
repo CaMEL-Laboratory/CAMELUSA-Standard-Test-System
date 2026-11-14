@@ -7,6 +7,9 @@ ENV PATH="/opt/yolo5_env/bin:$PATH"
 ENV LD_LIBRARY_PATH=/opt/GeneralMVTech/MVviewer/lib/GenICam/bin:/opt/GeneralMVTech/MVviewer/lib:$LD_LIBRARY_PATH
 ENV DISPLAY=:0
 
+# 在 COPY . /app 的【前面】加上这行
+COPY shape_predictor_68_face_landmarks.dat /app/shape_predictor_68_face_landmarks.dat
+
 # 拷贝项目源码并自动适配工业相机 MVSDK 路径
 COPY . /app
 

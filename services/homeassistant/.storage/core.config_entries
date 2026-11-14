@@ -116,10 +116,10 @@
           "app_id": "io.robbie.HomeAssistant",
           "app_name": "Home Assistant",
           "app_data": {
-            "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification",
-            "push_token": "dY3TekwkekoosXt5tm255e:APA91bGW_1ynlZVUHVo9EnVFua5B1Dg-hxr_2gBzZ8PnG67ZsHO5tB1IjzGl-tAaiAfJJaFRfbZXrCELuNAKzPn0-dipNJBS8qGO9iiX4wHY4xduUROMVIg"
+            "push_token": "cWjwnPg8F03yoW_PeVGJ3e:APA91bG-NSsf7iLeMWTfrPZssdqEkZaT0JuL7Jp-iOIgQJAKHZWQLjIrUrgm5WvhzKSN_pr61xggItCJczrv99SL0Pfkah0wm4xdgJwDLSSJSrHGRXi3Okw",
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
           },
-          "app_version": "2026.10.1 (2026.3213)",
+          "app_version": "2026.10.3 (2026.3322)",
           "os_version": "16.7.12",
           "device_name": "Mob",
           "supports_encryption": true,
@@ -172,6 +172,19 @@
         "pref_disable_polling": false,
         "source": "ssdp",
         "unique_id": "uuid:XY64BC26E895D6C13423E42D95EB005E4E76D",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "5770a3df305a055f38603d9556d536be",
+        "version": 1,
+        "domain": "synology_dsm",
+        "title": "Diskshanshan (10.0.0.227)",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ignore",
+        "unique_id": "001132710025",
         "disabled_by": null
       }
     ]
