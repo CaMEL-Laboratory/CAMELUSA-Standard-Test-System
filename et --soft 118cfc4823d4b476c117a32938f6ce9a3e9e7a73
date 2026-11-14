@@ -1,0 +1,116 @@
+[33mcommit 0f7c57d2e9758e590bf4cb0eac9918b2bd26f091[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: CMAELUSA <250077311+CAMELUSA@users.noreply.github.com>
+Date:   Fri Nov 13 21:16:50 2026 -0800
+
+    20261113 Main Branch Available ！
+
+ .dockerignore                         |   1 [32m+[m
+ .gitignore                            |   5 [32m+++[m
+ Dockerfile                            |  64 [31m----------------------------------[m
+ services/vision/Dockerfile.vision     |   3 [32m++[m
+ shape_predictor_68_face_landmarks.dat | Bin [31m99693937[m -> [32m0[m bytes
+ 5 files changed, 9 insertions(+), 64 deletions(-)
+
+[33mcommit 15c71c11ebaeed554ffc243663362f0a1a4e1e79[m
+Author: CMAELUSA <250077311+CAMELUSA@users.noreply.github.com>
+Date:   Fri Nov 13 19:38:02 2026 -0800
+
+    20261113 Main Branch Available ！
+
+ .github/workflows/ci-cd.yml                        |  76 [32m++[m[31m-[m
+ .gitignore                                         |   3 [32m+[m[31m-[m
+ records/2026-11-11/17-09-45_973_MOTION_Unknown.jpg | Bin [31m157429[m -> [32m0[m bytes
+ records/2026-11-11/17-09-47_503_MOTION_Unknown.jpg | Bin [31m167415[m -> [32m0[m bytes
+ records/2026-11-11/17-09-48_652_MOTION_Unknown.jpg | Bin [31m183990[m -> [32m0[m bytes
+ records/2026-11-11/17-09-50_885_MOTION_Unknown.jpg | Bin [31m132180[m -> [32m0[m bytes
+ records/2026-11-11/17-09-56_287_MOTION_Unknown.jpg | Bin [31m155787[m -> [32m0[m bytes
+ records/2026-11-11/17-10-03_859_MOTION_Unknown.jpg | Bin [31m143588[m -> [32m0[m bytes
+ records/2026-11-11/17-10-08_696_MOTION_Unknown.jpg | Bin [31m134844[m -> [32m0[m bytes
+ records/2026-11-11/17-10-10_272_MOTION_Unknown.jpg | Bin [31m90215[m -> [32m0[m bytes
+ records/2026-11-11/17-13-41_775_MOTION_Unknown.jpg | Bin [31m137242[m -> [32m0[m bytes
+ records/2026-11-11/17-13-42_957_MOTION_Unknown.jpg | Bin [31m93741[m -> [32m0[m bytes
+ records/2026-11-11/17-19-42_656_MOTION_Unknown.jpg | Bin [31m206774[m -> [32m0[m bytes
+ records/2026-11-11/17-19-48_313_MOTION_Unknown.jpg | Bin [31m170747[m -> [32m0[m bytes
+ .../2026-11-11/access_control.log.2026-11-11_17    |  65 [31m---[m
+ records/2026-11-12/10-39-44_961_MOTION_Unknown.jpg | Bin [31m522116[m -> [32m0[m bytes
+ records/2026-11-12/11-24-38_213_MOTION_Unknown.jpg | Bin [31m524488[m -> [32m0[m bytes
+ records/2026-11-12/11-52-19_437_MOTION_Unknown.jpg | Bin [31m525495[m -> [32m0[m bytes
+ records/2026-11-12/12-22-24_752_MOTION_Unknown.jpg | Bin [31m413705[m -> [32m0[m bytes
+ records/2026-11-12/12-22-25_451_DETECTED_Eric.jpg  | Bin [31m413705[m -> [32m0[m bytes
+ records/2026-11-12/12-22-27_519_MOTION_Unknown.jpg | Bin [31m411683[m -> [32m0[m bytes
+ .../2026-11-12/12-22-28_186_UNKNOWN_Unknown.jpg    | Bin [31m411683[m -> [32m0[m bytes
+ records/2026-11-12/12-22-28_911_DETECTED_Eric.jpg  | Bin [31m418485[m -> [32m0[m bytes
+ records/2026-11-12/12-22-30_097_MOTION_Unknown.jpg | Bin [31m455935[m -> [32m0[m bytes
+ .../2026-11-12/12-22-31_278_UNKNOWN_Unknown.jpg    | Bin [31m460492[m -> [32m0[m bytes
+ records/2026-11-12/12-22-32_004_DETECTED_Eric.jpg  | Bin [31m461212[m -> [32m0[m bytes
+ .../2026-11-12/12-22-34_326_UNKNOWN_Unknown.jpg    | Bin [31m460910[m -> [32m0[m bytes
+ records/2026-11-12/12-22-35_532_DETECTED_Eric.jpg  | Bin [31m455573[m -> [32m0[m bytes
+ records/2026-11-12/12-22-38_866_DETECTED_Eric.jpg  | Bin [31m443243[m -> [32m0[m bytes
+ records/2026-11-12/12-22-40_381_MOTION_Unknown.jpg | Bin [31m410100[m -> [32m0[m bytes
+ .../2026-11-12/12-22-41_344_UNKNOWN_Unknown.jpg    | Bin [31m410100[m -> [32m0[m bytes
+ records/2026-11-12/12-22-42_345_MOTION_Unknown.jpg | Bin [31m473202[m -> [32m0[m bytes
+ records/2026-11-12/12-22-48_226_MOTION_Unknown.jpg | Bin [31m428958[m -> [32m0[m bytes
+ records/2026-11-12/12-22-49_180_DETECTED_Eric.jpg  | Bin [31m433520[m -> [32m0[m bytes
+ records/2026-11-12/12-22-50_328_MOTION_Unknown.jpg | Bin [31m489794[m -> [32m0[m bytes
+ .../2026-11-12/12-22-51_100_UNKNOWN_Unknown.jpg    | Bin [31m489794[m -> [32m0[m bytes
+ records/2026-11-12/12-22-52_321_DETECTED_Eric.jpg  | Bin [31m491481[m -> [32m0[m bytes
+ records/2026-11-12/12-22-55_658_MATCH_Eric.jpg     | Bin [31m493077[m -> [32m0[m bytes
+ records/2026-11-12/12-22-57_979_DETECTED_Eric.jpg  | Bin [31m500672[m -> [32m0[m bytes
+ records/2026-11-12/12-22-58_750_MATCH_Eric.jpg     | Bin [31m500672[m -> [32m0[m bytes
+ records/2026-11-12/12-22-59_732_MATCH_Eric.jpg     | Bin [31m501968[m -> [32m0[m bytes
+ records/2026-11-12/12-41-12_140_MOTION_Unknown.jpg | Bin [31m507931[m -> [32m0[m bytes
+ records/2026-11-12/12-41-13_520_MOTION_Unknown.jpg | Bin [31m469780[m -> [32m0[m bytes
+ records/2026-11-12/12-41-15_463_MOTION_Unknown.jpg | Bin [31m397700[m -> [32m0[m bytes
+ records/2026-11-12/12-41-17_317_MOTION_Unknown.jpg | Bin [31m466393[m -> [32m0[m bytes
+ records/2026-11-12/12-41-18_702_MOTION_Unknown.jpg | Bin [31m504087[m -> [32m0[m bytes
+ records/2026-11-12/12-41-20_514_MOTION_Unknown.jpg | Bin [31m516377[m -> [32m0[m bytes
+ records/2026-11-12/12-41-21_919_MOTION_Unknown.jpg | Bin [31m523603[m -> [32m0[m bytes
+ records/2026-11-12/12-41-55_315_MOTION_Unknown.jpg | Bin [31m476512[m -> [32m0[m bytes
+ records/2026-11-12/12-41-57_558_MOTION_Unknown.jpg | Bin [31m446264[m -> [32m0[m bytes
+ records/2026-11-12/12-41-58_939_MOTION_Unknown.jpg | Bin [31m441211[m -> [32m0[m bytes
+ records/2026-11-12/12-42-02_034_MOTION_Unknown.jpg | Bin [31m436365[m -> [32m0[m bytes
+ records/2026-11-12/12-42-03_416_MOTION_Unknown.jpg | Bin [31m443455[m -> [32m0[m bytes
+ records/2026-11-12/12-42-08_229_MOTION_Unknown.jpg | Bin [31m450641[m -> [32m0[m bytes
+ records/2026-11-12/12-42-09_617_MOTION_Unknown.jpg | Bin [31m454220[m -> [32m0[m bytes
+ records/2026-11-12/12-42-14_871_MOTION_Unknown.jpg | Bin [31m467013[m -> [32m0[m bytes
+ records/2026-11-12/12-42-16_251_MOTION_Unknown.jpg | Bin [31m476174[m -> [32m0[m bytes
+ records/2026-11-12/12-42-17_638_MOTION_Unknown.jpg | Bin [31m460943[m -> [32m0[m bytes
+ records/2026-11-12/12-42-20_730_MOTION_Unknown.jpg | Bin [31m436236[m -> [32m0[m bytes
+ records/2026-11-12/12-42-25_530_MOTION_Unknown.jpg | Bin [31m433992[m -> [32m0[m bytes
+ records/2026-11-12/12-42-28_633_MOTION_Unknown.jpg | Bin [31m424834[m -> [32m0[m bytes
+ records/2026-11-12/12-42-31_479_MOTION_Unknown.jpg | Bin [31m470952[m -> [32m0[m bytes
+ records/2026-11-12/12-52-23_860_MOTION_Unknown.jpg | Bin [31m415674[m -> [32m0[m bytes
+ records/2026-11-12/12-52-25_248_MOTION_Unknown.jpg | Bin [31m434453[m -> [32m0[m bytes
+ records/2026-11-12/12-52-34_389_MOTION_Unknown.jpg | Bin [31m424366[m -> [32m0[m bytes
+ records/2026-11-12/12-52-34_871_DETECTED_Eric.jpg  | Bin [31m424366[m -> [32m0[m bytes
+ .../2026-11-12/12-52-35_181_UNKNOWN_Unknown.jpg    | Bin [31m424366[m -> [32m0[m bytes
+ records/2026-11-12/12-52-35_444_MOTION_Unknown.jpg | Bin [31m419100[m -> [32m0[m bytes
+ records/2026-11-12/12-52-36_456_MATCH_Eric.jpg     | Bin [31m419100[m -> [32m0[m bytes
+ records/2026-11-12/12-52-38_831_MOTION_Unknown.jpg | Bin [31m503507[m -> [32m0[m bytes
+ .../2026-11-12/access_control.log.2026-11-12_00    | 132 [31m-----[m
+ .../2026-11-12/access_control.log.2026-11-12_03    | 236 [31m--------[m
+ .../homeassistant/.storage/core.config_entries     |  19 [32m+[m[31m-[m
+ .../homeassistant/.storage/core.device_registry    |  58 [32m+[m[31m-[m
+ .../homeassistant/.storage/core.entity_registry    | 186 [32m++++[m[31m---[m
+ services/homeassistant/.storage/core.restore_state | 618 [32m++++++++++++++++++++[m[31m-[m
+ ...tend.user_data_31946bedc4094840a87527ff7135eb8d |  15 [32m+[m
+ services/homeassistant/.storage/http               |   2 [32m+[m[31m-[m
+ .../homeassistant/.storage/repairs.issue_registry  |  10 [32m+[m[31m-[m
+ services/homeassistant/home-assistant.log.1        |   2 [32m+[m[31m-[m
+ services/homeassistant/home-assistant_v2.db        | Bin [31m2732032[m -> [32m3497984[m bytes
+ services/homeassistant/home-assistant_v2.db-shm    | Bin [31m32768[m -> [32m32768[m bytes
+ services/homeassistant/home-assistant_v2.db-wal    | Bin [31m622152[m -> [32m523272[m bytes
+ shape_predictor_68_face_landmarks.dat              | Bin [31m0[m -> [32m99693937[m bytes
+ src/Yolo5IDReconOpen_Linux.py                      |  42 [32m+[m[31m-[m
+ tests/test_gate_system.py                          | 119 [32m++++[m
+ 86 files changed, 981 insertions(+), 602 deletions(-)
+
+[33mcommit 118cfc4823d4b476c117a32938f6ce9a3e9e7a73[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: CMAELUSA <250077311+CAMELUSA@users.noreply.github.com>
+Date:   Thu Nov 12 19:51:55 2026 -0800
+
+    ci: rename workflow to ci-cd.yml and use shell-based deployment
+
+ .github/workflows/ci-cd.yml  | 21 [32m+++++++++++++++++++++[m
+ .github/workflows/deploy.yml | 18 [31m------------------[m
+ 2 files changed, 21 insertions(+), 18 deletions(-)

@@ -26,7 +26,7 @@ paths_and_hardware:
 
   # --- 网络与 Alexa 语音组件绑定 ---
   local_ip: "10.0.0.58"                                                 # 精准绑定的 Jetson TX2 无线网卡 IP (wlan0)
-  wemo_port: 49153                                                      # WeMo HTTP 模拟服务端监听端口
+  wemo_port: 8080                                                      # WeMo HTTP 模拟服务端监听端口
   device_name: "Gate Lock"                                              # Alexa 语音唤醒显示的设备名称
   device_uuid: "Socket-1_0-220000000001"                                # 虚拟 WeMo 设备 UUID 标识符
 
